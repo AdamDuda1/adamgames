@@ -1,7 +1,7 @@
-### CodeWart
+# CodeWart
 
 [PL]
-# Co to jest CodeWart?
+## Co to jest CodeWart?
 CodeWart to projekt, który jest rozwijany pod kątem nauki programowania.
 Na naszej stronie, możesz nauczyć się tworzyć podstawowe witryny lub aplikacje internetowe.
     Dlaczego?
@@ -11,7 +11,7 @@ W sumie programowanie to dobra zabawa i sposób na spędzenie wolnego czasu (Prz
 Aby dowiedzieć się więcej, zapraszamy na https://codewart.github.io/about.
 
 [EN]
-# What's CodeWart?
+## What's CodeWart?
 CodeWart is a project that is developed with a view to learning programming.
 On our site, you can learn to create basic websites or web applications.
     Why?

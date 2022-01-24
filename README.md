@@ -1,3 +1,5 @@
+### CodeWart
+
 [PL]
 # Co to jest CodeWart?
 CodeWart to projekt, który jest rozwijany pod kątem nauki programowania.

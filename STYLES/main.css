@@ -1,0 +1,42 @@
+:root {
+    --text-color: #000;
+    --background-color: #fff;
+    --motive-color: #2ead3d;
+    --motive-color-2: #308f3c;
+}
+::selection { background-color: var(--motive-color); color: #fff; }
+html { scroll-behavior: smooth; }
+body {  background-color: var(--background-color); color: var(--text-color); margin: 0; padding: 0; }
+.navBar { -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); }
+.navBarElements { padding: 4px; }
+.navBarLogo { position: relative; font-size: 90px;  }
+.navBarLogoImg { height: 90px; position: relative; top: 10px; }
+.navBarLogoTitle { position: relative; top: -6px; position: relative; right: 15px; bottom: 8px; }
+.navBarHamburgerMenuClick {
+    position: relative;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    left: 96%;
+    bottom: 38.5px;
+}
+.navBarHamburgerMenuClick::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    left: 98%, 0px;
+    bottom: 43px;
+}
+.navBarHamburgerMenuClick::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    background-color: black;
+    width: 30px;
+    height: 5px;
+    left: 98%, 0px;
+    bottom: 44px;
+}

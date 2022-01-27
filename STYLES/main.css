@@ -7,36 +7,112 @@
 ::selection { background-color: var(--motive-color); color: #fff; }
 html { scroll-behavior: smooth; }
 body {  background-color: var(--background-color); color: var(--text-color); margin: 0; padding: 0; }
-.navBar { -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); }
-.navBarElements { padding: 4px; }
-.navBarLogo { position: relative; font-size: 90px;  }
-.navBarLogoImg { height: 90px; position: relative; top: 10px; }
-.navBarLogoTitle { position: relative; top: -6px; position: relative; right: 15px; bottom: 8px; }
-.navBarHamburgerMenuClick {
-    position: relative;
-    background-color: black;
-    width: 30px;
-    height: 5px;
-    left: 96%;
-    bottom: 38.5px;
+
+h1{
+    font-size: 50px;
+    font-family:Audiowide;
 }
-.navBarHamburgerMenuClick::before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    background-color: black;
-    width: 30px;
-    height: 5px;
-    left: 98%, 0px;
-    bottom: 43px;
+p{
+    font-size: 24px;
+    line-height: 50px;
 }
-.navBarHamburgerMenuClick::after {
-    content: '';
-    display: inline-block;
+.navBar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+.navigationIcon {
+    display: none;
+}
+@media (max-width: 880px) {
+    ul.nav {
+        display: none;
+    }
+    .navIcon {
+        display: inline;
+    }
+}
+.navigation{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+.navBarlogo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+img{
+    width: 20%;
+}
+a{
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: .25s;
+}
+a:hover{
+    color: var(--motive-color);
+}
+.banner-area{
     position: relative;
-    background-color: black;
-    width: 30px;
-    height: 5px;
-    left: 98%, 0px;
-    bottom: 44px;
+    background-image: url(header-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-area, .port-area, .service-area, .contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+.text-part{
+    width: 65%;
+    height: 80%;
+}        
+.about-area{
+    background-color: #fefefe; 
+}
+.port-area{
+    background-color: #262626;
+    color: #fff;
+}
+.service-area{
+    background-color: #fefefe;
+}
+.contact-area{
+    background-color: #262626;
+    color: #fff;
+}
+#home h1 {
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+#home span {
+    position: relative;
+    top: 50%;
+    left: 10%;
 }

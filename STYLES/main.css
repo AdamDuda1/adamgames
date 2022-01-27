@@ -175,7 +175,7 @@ a:hover{
 #home h1 {
     position: relative;
     top: 40%;
-    left: 40%;
+    text-align: center;
 }
 #home span {
     position: relative;

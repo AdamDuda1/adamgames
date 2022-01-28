@@ -107,11 +107,13 @@ a:hover{
     color: #fff;
 }
 #home h1 {
+    color: var(--background-color);
     position: relative;
     top: 40%;
     text-align: center;
 }
 #home span {
+    color: var(--background-color);
     position: relative;
     top: 50%;
     left: 10%;
@@ -126,6 +128,5 @@ a:hover{
 #home button:hover {
     background-color: var(--motive-color);
     color: var(--background-color);
-    border: 1px solid;
     transition-duration: .25s;
 }

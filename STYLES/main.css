@@ -133,3 +133,16 @@ a:hover{
     color: var(--background-color);
     transition-duration: .25s;
 }
+#home ion-icon {
+    color: var(--background-color);
+    border: 3px solid;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    top: 590px;
+    left: 278px;
+}
+#home ion-icon:hover {
+    color: var(--motive-color);
+    padding: 6px;
+}

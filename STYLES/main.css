@@ -6,73 +6,7 @@
 }
 ::selection { background-color: var(--motive-color); color: #fff; }
 html { scroll-behavior: smooth; }
-body {  background-color: var(--background-color); color: var(--text-color); margin: 0; padding: 0; }
-/*.navBar { font-family: 'Dongle', sans-serif; -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); -moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1); }
-.navBarElements { padding: 4px; }
-.navBarLogo { position: relative; font-size: 90px;  }
-.navBarLogoImg { height: 90px; position: relative; top: 10px; }
-.navBarLogoTitle { position: relative; top: -6px; position: relative; right: 15px; bottom: 8px; font-family: 'Dongle', sans-serif; }
-.navBarHamburgerMenuClick {
-    position: fixed;
-    background-color: black;
-    width: 45px;
-    height: 5px;
-    left: 900px;
-    bottom: 590.5px;
-    transition-duration: .25s;
-}
-.navBarHamburgerMenuClick::before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    background-color: black;
-    width: 45px;
-    height: 5px;
-    left: 98%, 0px;
-    bottom: 43px;
-}
-.navBarHamburgerMenuClick::after {
-    content: '';
-    display: inline-block;
-    position: relative;
-    background-color: black;
-    width: 45px;
-    height: 5px;
-    left: 98%, 0px;
-    bottom: 44px;
-}
-.navBarLink1, .navBarLink2, .navBarLink3 {
-    font-family: 'Dongle', sans-serif;
-}
-@media (min-width: 1001px) {
-    .navBarHamburgerMenuClick {
-        display: none;
-    }
-    .navBarLink1, .navBarLink2, .navBarLink3 {
-        display: inline;
-    }
-}
-@media (max-width: 1000px) {
-    .navBarHamburgerMenuClick {
-        display: inline-block;
-    }
-    .navBarLink1, .navBarLink2, .navBarLink3 {
-        display: none;
-    }
-}/////
-.settingsIcons { 
-    height: 1px;
-}
-.form {}*/
-html {
-    scroll-behavior: smooth;
-}
-body{
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    font-family:Poppins;
-}
+body { overflow-x: hidden; background-color: var(--background-color); color: var(--text-color); margin: 0; padding: 0; font-family:Poppins; }
 h1{
     font-size: 50px;
     font-family:Audiowide;
@@ -181,4 +115,17 @@ a:hover{
     position: relative;
     top: 50%;
     left: 10%;
+}
+#home button {
+    padding: 10px 15px;
+    background-color: inherit;
+    color: var(--background-color);
+    border: 3px solid;
+    transition-duration: .25s;
+}
+#home button:hover {
+    background-color: var(--motive-color);
+    color: var(--background-color);
+    border: 1px solid;
+    transition-duration: .25s;
 }

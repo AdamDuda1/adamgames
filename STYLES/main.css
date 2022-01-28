@@ -34,7 +34,7 @@ p{
 .navIcon {
     display: none;
 }
-@media (max-width: 880px) {
+@media (max-width: 877px) {
     ul.nav {
         display: none;
     }

@@ -141,7 +141,7 @@ a:hover{
     position: relative;
     top: 590px;
     left: 278px;
-    text-decoration: .25s;
+    animation-duration: .25s;
 }
 #home ion-icon:hover {
     color: var(--motive-color);

@@ -152,3 +152,6 @@ a:hover{
 #home ion-icon:hover {
     color: var(--motive-color);
 }
+.about-area ion-icon {
+    font-size: 200px;
+}

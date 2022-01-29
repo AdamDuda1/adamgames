@@ -156,3 +156,7 @@ a:hover{
 .about-area ion-icon {
     font-size: 200px;
 }
+.about-area #2 {
+    position: relative;
+    left: 904px;
+}

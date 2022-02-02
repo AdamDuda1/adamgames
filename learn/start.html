@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start learn with CodeWart</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <h1 style="width: 253px;position: relative;left: 6px;top: 6px;font-size: 50px;" class="navTitle"><span
+                    style="color:var(--motive)">S</span>tart <span style="color:var(--motive)">L</span>earn</h1>
+            <!--div [ngClass]={'.navShowIcon_Showed': isClicked} onClick='ShowMenuContent()' class="navShowIcon"
+                id="HamburgerMenu">
+                <div class="navShowIcon_i"></div>
+            </div-->
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p style="text-align: center;background-color: #262626;padding: 10px;color: navajowhite;
+        "><i style="color: var(--motive)">&copy;</i> Copyright by Adam Duda, CodeWart&trade; /<a href="app.js"
+                style="color: inherit">PL</a>
+    </footer>
+</body>
+
+</html>
+
+<!-- ********************************
+
+    > - &gt;
+
+-->
+
+<!--
+
+    this.fullScreenBtn = document.createElement('button');
+                this.fullScreenBtn.classList.add('syntaxhighlighter-block-bar-item__full-screen-btn');
+                if (!this.enableFullScreen) {
+                    this.fullScreenBtn.classList.add('syntaxhighlighter-block-bar-item__full-screen-btn--unavailable');
+                }
+                this.fullScreenBtn.textContent = 'Pełny ekran';
+                this.fullScreenBtn.type = 'button';
+                
+                if (this.enableFullScreen) {
+                    this.fullScreenBtn.addEventListener('click', this.fullScreenOnClick.bind(this));
+                } else {
+                    this.fullScreenBtn.disabled = true;
+                    this.fullScreenBtn.addEventListener('click', () => console.error('Full screen is not available!'));
+                }
+
+                return this.fullScreenBtn;
+            }
+
+            async fullScreenOnClick({ target }) {
+                const codeBlock = target.closest('.syntaxhighlighter-parent').querySelector('.syntaxhighlighter');
+                const fullScreenTarget = codeBlock.parentNode;
+                
+                if (this.isModernFullScreenFeatureSupported) {
+                    if (this.isFullScreen) {
+                        await document.exitFullscreen()
+                            .then(() => {
+                                fullScreenTarget.classList.remove(this.MODERN_FULL_SCREEN_CENTERING_CLASS_NAME);
+                                this.postProcessFullScreenToggle(codeBlock);
+                            })
+                            .catch(console.error);
+                    } else {
+                        /*
+                            User might exit full screen via ESC or native browser button, instead of
+                            re-using fullScreenBtn, which won't trigger it's click event.
+                            Thus, optional post processing is needed in such case.
+
+                            await is not used with Promise to prevent code from stoppping it's execution.
+                            Full screen event listener needs to be attached before entering full screen
+                            and it needs to run in background, because it waits for user to exit the full screen.
+                        */
+                        this.listenToFullScreenExitEvent().then(() => {
+                            if (this.isFullScreen) {
+                                this.postProcessFullScreenToggle(codeBlock);
+                            }
+                        });
+
+                        await fullScreenTarget.requestFullscreen()
+                            .then(() => fullScreenTarget.classList.add(this.MODERN_FULL_SCREEN_CENTERING_CLASS_NAME))
+                            .catch(() => this.fallbackFullScreenToggle(fullScreenTarget))
+                            .finally(() => this.postProcessFullScreenToggle(codeBlock));
+                    }
+                } else {
+                    this.fallbackFullScreenToggle(fullScreenTarget);
+                    document.body.classList.toggle('qa-disable-scroll', !this.isFullScreen);
+                    this.postProcessFullScreenToggle(codeBlock);
+                }
+            }
+
+-->

@@ -93,6 +93,7 @@ nav {
 footer {
     transition: all 1s;
 }
-footer:hover {
+footer:hover::selection {
     text-decoration: underline;
+    color: brown;
 }

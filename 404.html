@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Clicker</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onLoad='CheckUpdate(); onLoadTextAnimation()'>
+    <nav>
+        <div class="menuBar">
+            <div class="menuBarElements">
+                <a href="">
+                    <ion-icon name="information-outline"></ion-icon>ABOUT
+                </a><a href="">
+                    <ion-icon name="people-outline"></ion-icon>DEVELOPERS
+                </a><a href="">
+                    <ion-icon name="mail-outline"></ion-icon>CONTACT
+                </a><a href="">
+                    <ion-icon name="cloud-download-outline"></ion-icon>DOWNLOAD
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <br><br>
+        <header>
+            <div class="header" id="home">
+                <div class="headerRightContent">
+                    <div class="content" style="z-index: 9;">
+                        <div class="text">
+                            <h1 class="title">The Drogon Island</h1>
+                            <span class="subtitle">Do you have too little adventures or are you bored? You have nothing
+                                to play and all the games you like are paid? No problem!<br>The Drogon Island, is a
+                                project carried out by <a href="developers/thanks"><b>Adam Dev
+                                        Studios</b></a>.We offer an extensive adventure that will surely interest you.
+                                The main theme is dragons. Very interesting characters, huh?It only takes a few clicks
+                                to play! <a href="#download"><b>Try it for free!</b></a> </span><br><br><br><br>
+                        </div>
+                        <div class="buttons">
+                            <div class="learnMoreButton"><a href="#about">Learn more</a></div>
+                            <div class="downloadButton"><a href="#download">Download</a></div>
+                        </div>
+                    </div>
+                    <div class="scrollDownButton">
+                        <a href="#about">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="updateNotiy">
+                    <ion-icon onclick='HideUpdateNityfi()' name="close-outline"></ion-icon>
+                    <!--span>NEW!</span-->
+                    <div class="updateNotifyContent" style="text-align: center;position: relative;left: 10%;top: 10%;">
+                        <span>The
+                            new update is available:
+                            <br>2022.2 Version - <a href="download">Check it out now!</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="about">
+            <div id="about">
+                <h2>
+                    <ion-icon name="help-outline"></ion-icon>ABOUT
+                </h2>
+            </div>
+        </section>
+        <section id="download">
+            <div id="download">
+
+            </div>
+        </section>
+        <section id="about">
+            <div id="about">
+
+            </div>
+        </section>
+    </main>
+    <!--span class="material-icons">open_in_new</span-->
+
+    <footer>
+        <div class="outside-links">
+            <a href="discord" target="_blank">
+                <ion-icon name="logo-discord"></ion-icon>
+            </a>
+            <a href="github" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="youtube" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="src/scripts/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

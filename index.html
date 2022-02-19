@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Download Clicker</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Facebook Share -->
+	<meta property="og:url" content="https://adamduda1.github.io/codewart/learn/start" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Start learn Web technologies with CodeWart!" />
+	<meta property="og:description"
+		content="Have you ever wondered how the content you see on the internet reaches you, or how it happens that when we click the big "
+		SUBSCRIBE NEWSLETER" button, we receive notifications? Or are you just looking for a web development course?
+		Does not matter! Anyway, you've come to the right place! - click!" />
+	<meta property="og:image" content="src/IMG/attack_01.png" />
+	<meta property="og:locale" content="pl_PL" /> <!--  To set on app.js  -->
+
+	<!-- Twitter Share -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Start learn Web technologies with CodeWart!">
+	<meta name="twitter:description"
+		content="Have you ever wondered how the content you see on the internet reaches you, or how it happens that when we click the big "
+		SUBSCRIBE NEWSLETER" button, we receive notifications? Or are you just looking for a web development course?
+		Does not matter! Anyway, you've come to the right place! - click!">
+	<meta name="twitter:image" content="src/IMG/attack_01.png">
+</head>
+
+<body onLoad='CheckUpdate(); onLoadTextAnimation()'>
+	<nav>
+		<div class="menuBar">
+			<div class="menuBarElements">
+				<a href="">
+					<ion-icon name="information-outline"></ion-icon>ABOUT
+				</a><a href="">
+					<ion-icon name="people-outline"></ion-icon>DEVELOPERS
+				</a><a href="">
+					<ion-icon name="mail-outline"></ion-icon>CONTACT
+				</a><a href="">
+					<ion-icon name="cloud-download-outline"></ion-icon>DOWNLOAD
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<br><br>
+		<header>
+			<div class="header" id="home">
+				<div class="headerDecoration"></div>
+				<img src="src/IMG/attack_01.png" alt="">
+				<div class="headerRightContent">
+					<div class="content" style="z-index: 9;">
+						<div class="text">
+							<h1 class="title">The Drogon Island</h1>
+							<span class="subtitle">Do you have too little adventures or are you bored? You have nothing
+								to play and all the games you like are paid? No problem!<br>The Drogon Island, is a
+								project carried out by <a href="developers/thanks"><b>Adam Dev
+										Studios</b></a>.We offer an extensive adventure that will surely interest you.
+								The main theme is dragons. Very interesting characters, huh?It only takes a few clicks
+								to play! <a href="#download"><b>Try it for free!</b></a> </span><br><br><br><br>
+						</div>
+						<div class="buttons">
+							<div class="learnMoreButton"><a href="#about">Learn more</a></div>
+							<div class="downloadButton"><a href="#download">Download</a></div>
+						</div>
+					</div>
+					<div class="scrollDownButton">
+						<a href="#about">
+							<ion-icon name="chevron-down-outline"></ion-icon>
+						</a>
+					</div>
+				</div>
+				<div class="updateNotiy">
+					<ion-icon onclick='HideUpdateNityfi()' name="close-outline"></ion-icon>
+					<!--span>NEW!</span-->
+					<div class="updateNotifyContent" style="text-align: center;position: relative;left: 10%;top: 10%;">
+						<span>The
+							new update is available:
+							<br>2022.2 Version - <a href="download">Check it out now!</a></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="about">
+			<div id="about">
+				<div class="content">
+					<h2>
+						<ion-icon name="help-outline"></ion-icon><span>ABOUT</span>
+					</h2>
+					<span class="descriptionFromAuthor">" <i>I think that is something to be proud of. My one of the
+							first
+							games was great! Hours of work, spent on mechanics and graphics, and hundreds of hours at
+							unity
+							(more about programs and merit in <a href="developers/thanks">creadits</a>), have paid
+							off. I'm proud. I
+							encourage you to at
+							least try it!</i> " - Author</span>
+					<span class="descriptionFromHeader">Are you not adventurous or are you bored? You have
+						nothing to play and all the games you like are paid? No problem!
+						Drogon Island is a project implemented by Adam Dev Studios. We propose an extensive adventure
+						it will definitely interest you. <br> <br>
+						It is an RPG game. the leitmotif are dragons (as the name suggests). They are very interesting
+						creatures. During the game you will learn about their nature and behavior. At the end, you'll
+						even be able to fight them! It's all about your choices.<br><br></span>
+				</div>
+				<div class="decorate">
+					<img src="src/IMG/mountains.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="developers">
+			<div id="developers">
+				<br>a<br><br><br>
+			</div>
+		</section>
+		<section id="download">
+			<div id="download">
+				<br>a<br><br><br>
+			</div>
+		</section>
+	</main>
+	<!--span class="material-icons">open_in_new</span-->
+
+	<footer>
+		<div class="outside-links">
+			<a href="discord" target="_blank">
+				<ion-icon name="logo-discord"></ion-icon>
+			</a>
+			<a href="github" target="_blank">
+				<ion-icon name="logo-github"></ion-icon>
+			</a>
+			<a href="youtube" target="_blank">
+				<ion-icon name="logo-youtube"></ion-icon>
+			</a>
+		</div><br><br>
+		<span class="loadinfo">NOTHING MORE TO LOAD!</span>
+	</footer>
+
+	<script>
+
+		function onLoadTextAnimation() {
+			setTimeout(function () {
+				document.querySelector("header .content .text").style.left = "10px";
+				document.querySelector(".menuBarElements").style.top = "0";
+				document.querySelector("header img").style.opacity = "100";
+			}, 100);
+		}
+	</script>
+
+	<script src="src/scripts/app.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

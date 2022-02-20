@@ -223,13 +223,27 @@ header img {
     top: 70px;
     left: 840px;
 }
-
-#developers {
+#about .descriptionFromAuthor .o {
+    font-size: 25px;
+}
+#about .descriptionFromAuthor .o:last-child {
+    width: 500px;
+}
+#download {
     position: relative;
     top: -2px;
     color: white;
     background-color: black;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
 }
+#download .title_f {
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+
 
 footer {
     display: flex;

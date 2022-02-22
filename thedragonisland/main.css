@@ -267,6 +267,9 @@ header img {
     align-items: center;
     text-align: center;
 }
+#developers .sub {
+    font-size: 17px;
+}
 #developers .color {
     cursor: pointer;
     color: var(--tangerine);

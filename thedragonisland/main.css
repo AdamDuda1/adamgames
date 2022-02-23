@@ -291,6 +291,9 @@ footer {
     align-items: stretch;
     align-content: center;
 }
+footer .lic-info {
+    background-color: black;
+}
 footer .loadinfo {
     cursor: no-drop;
     text-align: center;

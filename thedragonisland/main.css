@@ -301,8 +301,13 @@ footer {
     align-items: stretch;
     align-content: center;
 }
+
 footer .lic-info {
     background-color: black;
+    color: white;
+}
+footer .lic-info:first-child {
+    
 }
 footer .loadinfo {
     cursor: no-drop;

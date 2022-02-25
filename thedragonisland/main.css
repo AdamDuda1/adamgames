@@ -360,3 +360,9 @@ footer .loadinfo:hover {
 	color: var(--tangerine);
 	text-decoration: none;
 }
+
+@media (max-width: 850px) {
+    nav, main {
+        display: none;
+    }
+}

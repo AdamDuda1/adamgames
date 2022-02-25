@@ -209,6 +209,8 @@ header img {
 }
 #about h2 span {
     font-size: 50px;
+    position: relative;
+    left: 15px;
 }
 #about h2 ion-icon {
     left: 7px;

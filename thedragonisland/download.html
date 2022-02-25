@@ -54,6 +54,7 @@
     <main>
 
         <br><br><br>DOWNLOAD <br> <br><br>
+        <span class="test"></span>
 
 
         <section id="developers">
@@ -93,16 +94,15 @@
     <script> // !important
 
         function getURLParametr() {
-            window.GetQueryString = function (q) {
-                var vars = [], hash;
-                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-                for (var i = 0; i < hashes.length; i++) {
-                    hash = hashes[i].split('=');
-                    vars[hash[0]] = hash[1];
-                }
-                return vars;
-            };
+            const params = new URLSearchParams(window.location.search);
+            const query = params.get("download");
+
+            document.querySelector(".test").innerHTML = params;
+
+
         }
+
+
 
     </script>
 

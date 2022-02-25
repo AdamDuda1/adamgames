@@ -34,7 +34,7 @@
     <meta name="twitter:image" content="/adamgames/favico.png">
 </head>
 
-<body onLoad='CheckUpdate(); onLoadTextAnimation()'>
+<body onLoad='onLoadTextAnimation(); getURLParametr()'>
     <nav>
         <div class="menuBar">
             <div class="menuBarElements">
@@ -52,6 +52,9 @@
     </nav>
 
     <main>
+
+        <br><br><br>DOWNLOAD <br> <br><br>
+
 
         <section id="developers">
             <div id="developers">
@@ -85,6 +88,23 @@
         <br>
         <span class="loadinfo">NOTHING MORE TO LOAD!</span>
     </footer>
+
+
+    <script> // !important
+
+        function getURLParametr() {
+            window.GetQueryString = function (q) {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            };
+        }
+
+    </script>
 
     <script>
 

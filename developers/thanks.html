@@ -34,7 +34,7 @@
     <meta name="twitter:image" content="/adamgames/favico.png">
 </head>
 
-<body onLoad='sndPlay(true)'>
+<body onLoad='sndPlay(true); load();'>
 
     <img src="BrickBackground.png" alt="">
     <div class="content">
@@ -45,8 +45,24 @@
         <h1 class="title">Thanks for everyone!</h1>
     </div>
     <div class="texts">
-        <h2 class="texts"></h2>
+        <h2 class="texts">
+            We thank the following partners:
+            <br><br>
+            Thanks for Adam Games Teams:
+            <br><br>
+        </h2>
     </div>
+
+    <script>
+
+        function load() {
+            setTimeout(function () {
+                0
+                document.querySelector(".texts").style.top = "0";
+            }, 100);
+        }
+
+    </script>
 
     <script>
 

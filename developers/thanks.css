@@ -48,3 +48,15 @@ img::selection {
     display: flex;
     justify-content: center;
 }
+.texts {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    color: white;
+    width: 100vw;
+    justify-content: center;
+    transition: all 5s ease-in-out;
+    height: 1000px;
+    z-index: 10;
+}

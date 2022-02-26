@@ -113,8 +113,8 @@
                 }
             }
 
-            if (pair[1] != "pick" || pair[1] != "latest" || pair[1] != "pickl" || pair[1] != "pilck" || pair[1] != "lpick") {
-                alert("Nie podano żadnego argumentu referencyjnego. Może to być spowodowane tym, że nie zostałeś przekierowany z oficjalnej strony, lub tym, że twoja przeglądarka nie jest wspierana. Przeczytaj więcej: https://api.adamduda1.github.io/unsupported-webbrowsher.")
+            if (pair[1] != "pick" || pair[1] == "latest" || pair[1] != "pickl" || pair[1] != "pilck" || pair[1] != "lpick") {
+                alert("Nie podano żadnego argumentu referencyjnego (arg. " + pair[1] + " jest niepoprawny lub nie istnieje). Może to być spowodowane tym, że nie zostałeś przekierowany z oficjalnej strony, lub tym, że twoja przeglądarka nie jest wspierana. Przeczytaj więcej: https://api.adamduda1.github.io/unsupported-webbrowsher.")
             }
         }
 

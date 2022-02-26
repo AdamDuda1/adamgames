@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://adamduda1.github.io/golink/link/d/font/burnstown%20dam.ttf');
+@import url('src/font/pricedown\ bl.otf');
+@import url('src/font/my_fonts.css');
+
+:root {
+	--blue-green: #219EBC;
+	--light-cornflower-blue: #8ECAE6;
+	--purssian-blue: #023047;
+	--selective-yellow: #FFB703;
+	--tangerine: #FB8500;		
+}
+::selection {
+    background-color: var(--purssian-blue);
+    color: var(--selective-yellow);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+	animation: all 3s;
+}
+img {
+    width: 100%;
+}
+img::selection {
+    background-color: inherit;
+}
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+.content a, .content ion-icon {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+.content .title {
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}

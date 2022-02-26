@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks page - Adam Games</title>
+    <link rel="stylesheet" href="thanks.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="/adamgames/favico.png">
+    <!-- Facebook Share -->
+    <meta property="og:url" content="https://adamduda1.github.io/adamgames/thedragonisland/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Dragon Island - Home page - Adam Games" />
+    <meta property="og:description" content='Are you not adventurous or are you bored? You have
+	nothing to play and all the games you like are paid? No problem!
+	Drogon Island is a project implemented by Adam Dev Studios. We propose an extensive adventure
+	it will definitely interest you. It is an RPG game. the leitmotif are dragons (as the name suggests). They are very interesting
+	creatures. During the game you will learn about their nature and behavior. At the end, you ll even be able to fight
+		them! Its all about your choices.' />
+    <meta property="og:image" content="/adamgames/favico.png" />
+    <meta property="og:locale" content="pl_PL" /> <!--  To set on app.js  -->
+
+    <!-- Twitter Share -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thanks page - Adam Games">
+    <meta name="twitter:description" content='Are you not adventurous or are you bored? You have
+	nothing to play and all the games you like are paid? No problem!
+	Drogon Island is a project implemented by Adam Dev Studios. We propose an extensive adventure
+	it will definitely interest you. It is an RPG game. the leitmotif are dragons (as the name suggests). They are very interesting
+	creatures. During the game you will learn about their nature and behavior. At the end, you ll even be able to fight
+		them! Its all about your choices.'>
+    <meta name="twitter:image" content="/adamgames/favico.png">
+</head>
+
+<body onLoad='sndPlay(true)'>
+
+    <img src="BrickBackground.png" alt="">
+    <div class="content">
+        <a href="">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </a>
+        <ion-icon onclick='sndMute()' name="volume-mute-outline"></ion-icon>
+        <h1 class="title">Thanks for everyone!</h1>
+    </div>
+    <div class="texts">
+        <h2 class="texts"></h2>
+    </div>
+
+    <script>
+
+        localStorage.setItem('firstload', false);
+
+        var snd = new Audio("chris-later-dany-yeager-theres-nobody-else-ncs-release.mp3");
+        snd.loop = true;
+        snd.autoplay = true;
+
+        function sndPlay(mute) {
+            if (mute = true && localStorage.getItem('muted') != true) {
+                snd.play();
+            }
+        }
+        function sndMute() {
+            snd.pause();
+            localStorage.setItem('muted', true);
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

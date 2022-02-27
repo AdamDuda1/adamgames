@@ -114,7 +114,6 @@ header .content .text {
 header .content .title {
     font-size: 270%;
     transition: all .4s;
-    text-shadow: 0 0 5px black;
 }
 header .content .title:hover {
     font-size: 320%;
@@ -207,7 +206,6 @@ header img {
     display: flex;
     position: relative;
     top: 33px;
-    text-shadow: 0 0 10px black;
 }
 #about h2 span {
     font-size: 50px;
@@ -259,7 +257,6 @@ header img {
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    text-shadow: 0 0 10px white;
 }
 #download .title {
     text-align: center;
@@ -307,13 +304,8 @@ header img {
     align-items: center;
     text-align: center;
 }
-#developers .title {
-
-    text-shadow: 0 0 10px black;
-}
 #developers .sub {
     font-size: 17px;
-    text-shadow: 0 0 10px black;
 }
 #developers .color {
     cursor: pointer;

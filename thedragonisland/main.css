@@ -95,6 +95,7 @@ ion-icon {
 header .content {
 	font-family: 'Roboto', sans-serif;
     position: absolute;
+    left: -850px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -107,7 +108,7 @@ header .content {
 header .content .text {
     cursor: pointer;
     position: relative;
-    left: -854px;
+    left: 0;
     width: 550px;
     transition: all .4s;
 }

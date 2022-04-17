@@ -15,7 +15,7 @@ header {
 header:hover {
     background-position-y: -50px;
 }
-header h1.title { 
+header div h1.title { 
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: red;
@@ -30,10 +30,10 @@ header h1.title {
     cursor: pointer;
     transition: all .5s;
 }
-header h1.title:hover { 
+header div h1.title:hover { 
     font-size: 65px;
 }
-header span.sub {
+header div span.sub {
     margin: 25px 200px;
     cursor: pointer;
     transition: all .5s;

@@ -1,0 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#s1h div#home {
+    color: white;
+    font-family: sans-serif;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/19/10/00/school-work-851328_960_720.jpg);
+    background-size: cover;
+}
+#s1s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

@@ -1,5 +1,35 @@
+/*
+    --back: #2b0245,
+    --motive: #feb93f;
+*/
 html {scroll-behavior: smooth;}
 body {margin: 0; padding: 0;}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  bo
+
+
+nav {
+    display: flex;
+    position: fixed;
+    background: white;
+    width: -webkit-fill-available;
+    height: 40px;
+    margin: 10px;
+    border: 1px black;
+    border-radius: 6px;
+    box-shadow: 0 0 10px;
+    justify-content: space-around;
+    align-items: center;
+}
 
 header { 
     display: flex; 
@@ -11,10 +41,12 @@ header {
     background-image: url(https://cdn.pixabay.com/photo/2021/10/09/07/37/maisan-provincial-park-6693310_960_720.jpg);
     background-size: cover;
     transition: all .5s;
+    text-shadow: 0 0 20px #a7a7a7;
+
 }
-header:hover {
+/*header:hover {
     background-position-y: -50px;
-}
+}*/
 header div h1.title { 
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -37,4 +69,12 @@ header div span.sub {
     margin: 25px 200px;
     cursor: pointer;
     transition: all .5s;
+}
+
+footer {
+    background-color: #5d5d5d78;
+}
+footer .nav_main_copyinfo {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

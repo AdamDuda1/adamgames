@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    position: fixed;
+    background: white;
+    width: -webkit-fill-available;
+    height: 40px;
+    margin: 7px;
+    border: 1px black;
+    border-radius: 6px;
+    box-shadow: 0 0 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .nav_main {
+    width: 80%;
+    height: 100%;
+}
+nav .nav_main_elements {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav_main a {
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: var(--back);
+    font-size: 20px;
+    transition: all .25s;
+}
+nav .nav_main a:hover, nav .nav_main a#this {
+    color: var(--motive);
+    font-size: 25px;
+}
+
+nav .nav_main .nav_section_AppsGames, nav .nav_main .nav_section_About {
+    display: flex;
+    position: fixed;
+    background: white;
+    width: inherit;
+    height: 100px;
+    margin: 7px;
+    border: 1px black;
+    border-radius: 6px;
+    box-shadow: 0 0 10px;
+    transition: all .15s;
+}

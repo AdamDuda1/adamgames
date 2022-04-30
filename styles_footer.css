@@ -1,0 +1,22 @@
+
+footer {
+    color: var(--motive);
+    background-color: var(--back);
+}
+footer .footer_main_infoboxes1 {
+    display: flex;
+}
+footer .footer_main_companyinfo {
+    display: flex;
+}
+footer .footer_main_companyinfo h2 {
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer .footer_main_sites {
+    display: flex;
+}
+footer .footer_main_copyinfo {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

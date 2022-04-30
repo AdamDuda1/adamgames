@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Games Studio</title>
-    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="stylesheet" href="styles_navbar.css">
+    <link rel="stylesheet" href="styles_footer.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="src/img/logo/AdamGamesStudioLogo - Alpha InCircle.png">
 
@@ -23,21 +27,31 @@
     <meta name="twitter:image" content="/adamgames/favico.png">
 </head>
 
-<body>
+<body onload='console.log(document.QuerySelector("nav div.nav_section_About"))'>
     <nav>
         <div class="nav_main">
             <div class="nav_main_elements">
-                <a onmouseenter='ShowNavSections()' href="">Home</a>
+                <a href="" id="this">Home</a>
                 <a href="">Services</a>
-                <a href="">About us</a>
-                <a href="">Contact us</a>
+                <a href="">Apps & Games</a>
+                <a onmouseenter='ShowNavSections(document.QuerySelector("nav .nav_main .nav_section_AppsGames"))'
+                    href="">For Developers</a>
+                <a onmouseenter='ShowNavSections()' href="about">About Us & Contacts</a>
+            </div>
+
+            <!--div class="nav_section_AppsGames">
+
+            </div-->
+            <div class="nav_section_About">
+
             </div>
         </div>
     </nav>
     <script type="text/javascript">
+        const ForDevelopers = document.QuerySelector("nav .nav_main .nav_section_AppsGames");
 
         function ShowNavSections(Element) {
-
+            document.QuerySelector("nav .nav_main .nav_section_About").style.display = 'none';
         }
     </script>
 
@@ -47,10 +61,19 @@
             <!--span class="sub">Welcome</span-->
         </div>
     </header>
-    more soon...
+    <br>
 
-    <br><br><br><br><br><br><br><br><br>
+    <main>
+        <section id="Welcome">
+            <h3>Welcome!</h3>
+        </section>
+        <section id="ForDevelopers">
+            <hr>
+            <h3>For Developers</h3>
+        </section>
+    </main>
 
+    <br>
     <footer>
         <div class="footer_main">
             <div class="footer_main_infoboxes1">

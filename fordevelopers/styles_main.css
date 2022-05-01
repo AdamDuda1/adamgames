@@ -1,0 +1,24 @@
+:root {
+    --back: #2b0245;
+    --motive: #feb93f;
+}
+::selection { background-color: var(--back); }
+html { scroll-behavior: smooth; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+body { margin: 0; padding: 0; }
+/*
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--motive);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--back);
+  border-radius: 10px;
+}*/
+
+
+
+
+

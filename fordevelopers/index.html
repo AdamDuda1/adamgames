@@ -28,71 +28,79 @@
 </head>
 
 <body onload='console.log(document.QuerySelector("nav div.nav_section_About"))'>
-<nav>
-    <div class="nav_main">
-        <div class="nav_main_elements">
-            <a href="/adamgames/">Home</a>
-            <a onmouseenter='console.log(this)' href="">Services</a>
-            <a onmouseenter='console.log(this)' href="">Apps & Games</a>
-            <a onmouseenter='console.log(this)' href="" id="this">For Developers</a>
-            <a onmouseenter="console.log(document.getElementsByClassName('nav_section_About').fadeOut)"
-               href="">About Us &
-                Contacts</a>
-        </div>
+    <nav>
+        <div class="nav_main">
+            <div class="nav_main_elements">
+                <a href="/adamgames/">Home</a>
+                <a onmouseenter='console.log(this)' href="">Services</a>
+                <a onmouseenter='console.log(this)' href="">Apps & Games</a>
+                <a onmouseenter='console.log(this)' href="#" id="this">For Developers</a>
+                <a onmouseenter="console.log(document.getElementsByClassName('nav_section_About').fadeOut)"
+                    href="/adamgames/about">About Us &
+                    Contacts</a>
+            </div>
 
-        <!--div class="nav_section_AppsGames">
+            <!--div class="nav_section_AppsGames">
 
         </div-->
-    </div>
-</nav>
-<br>
-<main>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <h1 class="title"><b>For Developers Resources</b>
+                <br> <span>Adam Games Studio</span>
+            </h1>
+            <!--span class="sub">Welcome</span-->
+        </div>
+    </header>
+    <br>
+    <main>
 
-</main>
-<br>
-<footer>
-    <div class="footer_main">
-        <div class="footer_main_infoboxes1">
-            <div class="footer_main_companyinfo">
-                <img src="src/img/logo/AdamGamesStudioLogo - Alpha.png" alt="company logo" width="300px">
-                <h2 class="CompanyName">Adam Games Studio</h2>
+    </main>
+    <br>
+    <footer>
+        <div class="footer_main">
+            <div class="footer_main_infoboxes1">
+                <div class="footer_main_companyinfo">
+                    <img src="/adamgames/src/img/logo/AdamGamesStudioLogo - Alpha.png" alt="company logo" width="300px">
+                    <h2 class="CompanyName">Adam Games Studio</h2>
+                </div>
+
+                <br>
+                <div class="footer_main_sites">
+                    <div>
+                        <b>General</b>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                    </div>
+                    <div>
+                        <b>Services</b>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                    </div>
+                    <div>
+                        <b>General</b>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                    </div>
+                    <div>
+                        <b>About Up</b>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                        <b>Contact Up</b>
+                        <li><a href="#">home</a></li>
+                    </div>
+                </div>
             </div>
-
             <br>
-            <div class="footer_main_sites">
-                <div>
-                    <b>General</b>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                </div>
-                <div>
-                    <b>Services</b>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                </div>
-                <div>
-                    <b>General</b>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                </div>
-                <div>
-                    <b>About Up</b>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <b>Contact Up</b>
-                    <li><a href="#">home</a></li>
-                </div>
+            <div onclick='' class="footer_main_copyinfo">
+                <span>&copy; by Adam Games Studio&trade;, 2021 - 2022</span>
             </div>
-        </div>
-        <br>
-        <div onclick='' class="footer_main_copyinfo">
-            <span>&copy; by Adam Games Studio&trade;, 2021 - 2022</span>
-        </div>
-    </div><br>
-</footer>
+        </div><br>
+    </footer>
 </body>
 
 </html>

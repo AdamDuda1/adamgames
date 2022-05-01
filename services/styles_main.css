@@ -65,3 +65,7 @@ header div span.sub {
   cursor: pointer;
   transition: all .5s;
 }
+
+section {
+    text-align: center;
+}

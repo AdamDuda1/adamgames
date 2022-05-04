@@ -5,76 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I couldn't get it!</title>
-    <link rel="stylesheet" href="thedragonisland/main.css">
-    <link rel="stylesheet" href="404.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Adam Games Studio</title>
+
+    <link rel="stylesheet" href="styles_404.css">
+    <link rel="stylesheet" href="styles_gl_main.css">
+    <link rel="stylesheet" href="styles_navbar.css">
+    <link rel="stylesheet" href="styles_footer.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="src/img/logo/AdamGamesStudioLogo - Alpha InCircle.png">
+
+    <meta property="og:url" content="https://adamduda1.github.io/adamgames/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Adam Games Studio Page" />
+    <meta property="og:description" content='Welcome!' />
+    <meta property="og:image" content="/adamgames/favico.png" />
+    <meta property="og:locale" content="en_US" /> <!--  To set on app.js  -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adam Games Studio Page">
+    <meta name="twitter:description" content='Welcome!'>
+    <meta name="twitter:image" content="/adamgames/favico.png">
 </head>
 
-<body onLoad='onLoadTextAnimation()'>
+<body onload='console.log(document.QuerySelector("nav div.nav_section_About"))'>
     <nav>
-        <div class="menuBar">
-            <div class="menuBarElements">
-                <a href="">
-                    <ion-icon name="information-outline"></ion-icon>ABOUT
-                </a><a href="">
-                    <ion-icon name="people-outline"></ion-icon>DEVELOPERS
-                </a><a href="">
-                    <ion-icon name="mail-outline"></ion-icon>CONTACT
-                </a><a href="">
-                    <ion-icon name="cloud-download-outline"></ion-icon>DOWNLOAD
-                </a>
+        <div class="nav_main">
+            <div class="nav_main_elements">
+                <a href="/adamgames/">Home</a>
+                <a onmouseenter='console.log(this)' href="services">Services</a>
+                <a onmouseenter='console.log(this)' href="services">Apps & Games</a>
+                <a onmouseenter='console.log(this)' href="fordevelopers">For Developers</a>
+                <a onmouseenter="console.log(document.getElementsByClassName('nav_section_About').fadeOut)"
+                    href="about">About Us &
+                    Contacts</a>
             </div>
+
+            <!--div class="nav_section_AppsGames">
+
+            </div-->
+            <!--div class="nav_section_About">
+
+            </div-->
         </div>
     </nav>
 
-    <main>
-        <br><br>
-        <header>
-            <div class="header" id="home">
-                <h1 class="title">Cannot GET <code>http</code> protocol!</h1>
-                <span class="sub">Page not found.</span>
-                <div class="WhatcanIdo">
-                    <h2>What can I do?</h2>
-                    <ul style="text-align: left;">
-                        <li>Refresh the page.</li>
-                        <li>Check that the url is correct.</li>
-                        <li>Clear cookies or try a different browser.</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-
-    </main>
-    <!--span class="material-icons">open_in_new</span-->
-
-    <footer>
-        <div class="outside-links">
-            <a href="discord" target="_blank">
-                <ion-icon name="logo-discord"></ion-icon>
-            </a>
-            <a href="github" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a href="youtube" target="_blank">
-                <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+    <header>
+        <div>
+            <h1 class="title"><b>Unable to get <code>http</code> protocol.</b><br>
+                <span>That's all we know...</span><br>
+                <span id="a">You can try: <br>
+                    <li>Check URL</li>
+                    <li>Try google it.</li>
+                    <li>no more</li>
+                </span>
+            </h1>
+            <!--span class="sub">Welcome</span-->
         </div>
-
-    </footer>
-
-    <script>
-
-        function onLoadTextAnimation() {
-            setTimeout(function () {
-                document.querySelector(".menuBarElements").style.top = "0";
-            }, 100);
-        }
-    </script>
-
-    <script src="src/scripts/app.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </header>
 </body>
 
 </html>
